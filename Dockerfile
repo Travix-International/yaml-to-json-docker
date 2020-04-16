@@ -1,6 +1,6 @@
-FROM alpine:latest
+FROM node:alpine
 
-RUN apk update && apk add nodejs && npm install js-yaml
+RUN npm install js-yaml
 
 COPY yaml-to-json /
 
